@@ -1,0 +1,227 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GRID PRINCIPAL  */
+body {
+  font-family: Georgia, serif;
+  color: #222;
+  background: #f5f5f5;
+
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+/* AREAS */
+header {
+  grid-area: header;
+  background: #1a1a2e;
+  padding: 16px 40px;
+  border-bottom: 3px solid #e94560;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* NAV  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.logo {
+  color: #e94560;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* SECCIONES */
+section {
+  padding: 40px;
+}
+
+/* HERO LAYOUT */
+section:first-of-type {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* IMAGEN */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+
+/* HERO */
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e94560;
+}
+
+.class-badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 10px;
+  background: #e94560;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.hero-bio {
+  margin-top: 16px;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.hero-meta {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.meta-item {
+  margin-bottom: 6px;
+}
+
+.meta-label {
+  color: #e94560;
+  font-weight: bold;
+}
+
+/* TITULOS */
+.section-title {
+  margin-top: 20px;
+  font-size: 1.8rem;
+}
+
+/* STATS */
+.stats-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  margin-bottom: 15px;
+}
+
+.stat-card img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.stat-value {
+  font-weight: bold;
+}
+
+.stat-label {
+  color: #555;
+}
+
+/* SKILLS */
+.skill-card {
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  font-weight: bold;
+  color: #e94560;
+}
+
+.skill-desc {
+  margin: 10px 0;
+}
+
+.skill-cost {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #e94560;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+/* FORM */
+.challenge-section {
+  background: #1a1a2e;
+  color: white;
+}
+
+.challenge-intro {
+  margin-bottom: 20px;
+}
+
+form {
+  margin-top: 10px;
+}
+
+input,
+select {
+  display: block;
+  margin-bottom: 10px;
+  padding: 6px;
+}
+
+/* BOTÓN */
+.btn {
+  background: #e94560;
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  margin: 5px 0;
+}
